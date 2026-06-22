@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RE-PORT // ANALYST_RESUME</title>
+    <title>RE-PORT // VIRTUAL_OS_PORTFOLIO_SPEC</title>
     <style>
         /* --- DESIGN SYSTEM TOKENS --- */
         :root {
@@ -33,13 +33,13 @@
             margin: 0;
             padding: 0;
             font-family: var(--font-mono);
-            letter-spacing: -0.05em; /* 자간을 촘촘하게 유지 */
+            letter-spacing: -0.05em;
         }
 
         body {
             background-color: var(--bg-main);
             color: var(--text-main);
-            font-size: 15px; /* 본문 스케일 */
+            font-size: 15px;
             line-height: 1.5;
             padding: 16px;
             height: 100vh;
@@ -68,7 +68,7 @@
         /* --- LAYOUT SYSTEM (Three-Panel) --- */
         .desktop-workspace {
             display: grid;
-            grid-template-columns: 300px 1fr 350px;
+            grid-template-columns: 320px 1fr 380px;
             gap: 16px;
             flex: 1;
             overflow: hidden;
@@ -86,7 +86,7 @@
         .window-header {
             background-color: #2D2D2D;
             padding: 6px 12px;
-            font-size: 17px; /* 패널 제목 스케일 */
+            font-size: 17px;
             font-weight: 500;
             border-bottom: 1px solid var(--accent);
             display: flex;
@@ -126,20 +126,20 @@
             background: #2D2D2D;
         }
         .window-body::-webkit-scrollbar-thumb {
-            background: #6E5A9A; /* 차분한 보라 계열 */
+            background: #6E5A9A;
         }
         .window-body::-webkit-scrollbar-thumb:hover {
             background: var(--accent);
         }
 
-        /* --- LEFT PANEL: NAVIGATION & IDENTITY --- */
-        .profile-section {
+        /* --- LEFT PANEL: NAVIGATION & REPOSITORY TREE --- */
+        .repo-section {
             text-align: center;
             margin-bottom: 20px;
             padding-bottom: 16px;
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
-        .avatar-placeholder {
+        .repo-icon {
             width: 80px;
             height: 80px;
             border: 1px solid var(--accent);
@@ -150,6 +150,7 @@
             justify-content: center;
             color: var(--accent);
             font-weight: bold;
+            font-size: 24px;
         }
 
         .tree-node {
@@ -163,7 +164,7 @@
             margin-right: 6px;
         }
 
-        /* --- CENTRAL PANEL: CORE TARGET (EXPERIENCE) --- */
+        /* --- CENTRAL PANEL: CORE WORKSPACE (DEVELOPMENT LOG) --- */
         .section-title {
             font-size: 20px;
             color: #FFF;
@@ -232,7 +233,7 @@
             border-color: var(--accent);
         }
 
-        /* --- RIGHT PANEL: DOSSIER & LOG --- */
+        /* --- RIGHT PANEL: TECHNICAL SPEC & PHILOSOPHY --- */
         .dossier-text {
             font-size: 15px;
             margin-bottom: 16px;
@@ -258,7 +259,7 @@
             background-color: var(--inner-surface);
             border: 1px solid var(--accent);
             padding: 10px 16px;
-            min-width: 240px;
+            min-width: 260px;
             animation: slideIn 150ms ease-out forwards;
             display: flex;
             justify-content: space-between;
@@ -282,8 +283,8 @@
 <body>
 
     <header>
-        <div>RE-PORT OS v1.0.4</div>
-        <div>TARGET_ID: <span class="text-accent">ANALYST_GILDONG</span></div>
+        <div>RE-PORT UI ARCHITECTURE</div>
+        <div>REPOSITORY: <span class="text-accent">R3D0WN/virtual-os-portfolio</span></div>
         <div class="sys-status">● SYSTEM ONLINE</div>
     </header>
 
@@ -291,33 +292,34 @@
         
         <section class="window">
             <div class="window-header">
-                <span class="window-title">NAVIGATOR</span>
+                <span class="window-title">EXPLORER</span>
                 <div class="window-dots"><div class="dot"></div><div class="dot active"></div></div>
             </div>
             <div class="window-body">
-                <div class="profile-section">
-                    <div class="avatar-placeholder">AG</div>
-                    <h3>홍길동 (Gildong Hong)</h3>
-                    <p class="meta-info">POSITION: SECURITY ANALYST</p>
+                <div class="repo-section">
+                    <div class="repo-icon">OS</div>
+                    <h3>virtual-os-portfolio</h3>
+                    <p class="meta-info">CORE ENVIRONMENT: Unity / C#</p>
                 </div>
 
                 <div class="tree-node">
                     <span class="status-badge" style="background: var(--open);"></span>
-                    <span class="text-open">[OPEN]</span> CORE_SKILLS.dat
+                    <span class="text-open">[OPEN]</span> UI_DESIGN_TOKENS.json
                 </div>
                 <div style="padding-left: 16px; font-size: 14px;">
-                    <p class="text-muted">> Python / C++</p>
-                    <p class="text-muted">> Reverse Engineering</p>
-                    <p class="text-muted">> Linux Architecture</p>
+                    <p class="text-muted">> BackgroundMain: #1A1A1A</p>
+                    <p class="text-muted">> AccentBorder: #8F5DFF</p>
+                    <p class="text-muted">> PrimaryButton: #478800</p>
                 </div>
 
                 <div class="tree-node" style="margin-top: 16px;">
                     <span class="status-badge" style="background: var(--cracking);"></span>
-                    <span style="color: var(--cracking)">[CRACKING]</span> CONTACT_INFO.cfg
+                    <span style="color: var(--cracking)">[CRACKING]</span> INTERACTION_RULES.cfg
                 </div>
                 <div style="padding-left: 16px; font-size: 14px;">
-                    <p class="text-muted">EML: analyst@re-port.io</p>
-                    <p class="text-muted">TEL: +82 10-1234-5678</p>
+                    <p class="text-muted">> Hover Action: Brightness Only</p>
+                    <p class="text-muted">> Target-Value Input System</p>
+                    <p class="text-muted">> Monospace Typography</p>
                 </div>
             </div>
         </section>
@@ -328,59 +330,74 @@
                 <div class="window-dots"><div class="dot active"></div><div class="dot active"></div></div>
             </div>
             <div class="window-body">
-                <h2 class="section-title">PROJECT_LOGS</h2>
+                <h2 class="section-title">CORE_DEVELOPMENT_LOGS</h2>
                 
                 <div class="project-card">
                     <div class="project-header">
-                        <strong>PROJECT: RED_ROOM_BREACH</strong>
+                        <strong>LOG_01: DIAGECTIC_INTERFACE_BASE</strong>
                         <span class="text-open">SUCCESS</span>
                     </div>
-                    <p class="meta-info">PERIOD: 2025.01 - 2025.06</p>
-                    <p style="margin-top: 6px;">가상 OS 환경 내 파일 시스템 취약점 분석 및 침투 테스트 도구 자체 개발 업무 수행.</p>
+                    <p class="meta-info">TARGET: 가상 OS 데스크톱 전체를 플레이 공간으로 활용</p>
+                    <p style="margin-top: 6px;">KDE Plasma에서 차용한 정돈된 패널 구조와 해킹 시뮬레이션의 차가운 질감을 결합해, 명확하고 몰입감 있는 PC 조작 환경 구현 완수.</p>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <strong>PROJECT: PLASMA_DASHBOARD_PANEL</strong>
+                        <strong>LOG_02: INPUT_FIELD_REFACTOR</strong>
                         <span class="text-open">SUCCESS</span>
                     </div>
-                    <p class="meta-info">PERIOD: 2024.08 - 2024.12</p>
-                    <p style="margin-top: 6px;">KDE Plasma 구조를 벤치마킹한 모듈형 데이터 관제 패널 UI 컴포넌트 설계 및 데이터 최적화 구현.</p>
+                    <p class="meta-info">TARGET: CLI 진입 장벽 제거 및 GUI 문법 정립</p>
+                    <p style="margin-top: 6px;">기존 Hacknet의 외우는 명령어 방식에서 탈피하여 '정확한 타깃 값을 입력하는 시스템(IP, 포트, PW 등)'으로 전환. 붙여넣기 흐름 적극 지원.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <strong>LOG_03: TOAST_NOTIFICATION_CENTER</strong>
+                        <span class="text-open">SUCCESS</span>
+                    </div>
+                    <p class="meta-info">TARGET: 시스템 알림 분리 및 우측 기록 패널 연동</p>
+                    <p style="margin-top: 6px;">즉시성 알림(복사 완료, 포트 개방 등)은 우측 하단 120~180ms 속도의 데스크톱형 토스트로 처리하고, 장기 데이터는 알림 센터에 기록형 리스트로 누적.</p>
                 </div>
 
                 <div class="input-group">
-                    <label class="meta-info" style="display:block; margin-bottom:4px;">DECRYPT_TARGET_TOKEN (VAL_INPUT)</label>
-                    <input type="text" class="input-field" placeholder="Enter target token value..." value="TOKEN_4582_VERIFIED">
+                    <label class="meta-info" style="display:block; margin-bottom:4px;">TARGET_IP_ADDRESS (INPUT_FIELD)</label>
+                    <input type="text" class="input-field" id="target-ip" placeholder="e.g. 192.168.22.105" value="127.0.0.1">
                 </div>
                 <div style="margin-top: 12px;" class="text-right">
-                    <button class="btn ghost" style="margin-right: 8px;">RESET</button>
-                    <button class="btn" onclick="triggerToast('DECRYPT SUCCESS', 'success')">EXECUTE</button>
+                    <button class="btn ghost" style="margin-right: 8px;" onclick="document.getElementById('target-ip').value=''">CLEAR</button>
+                    <button class="btn" onclick="triggerToast('PORT 22 OPEN', 'success')">CONNECT TARGET</button>
                 </div>
             </div>
         </section>
 
         <section class="window">
             <div class="window-header">
-                <span class="window-title">DOSSIER_VIEWER</span>
+                <span class="window-title">SPECIFICATION_VIEWER</span>
                 <div class="window-dots"><div class="dot active"></div><div class="dot"></div></div>
             </div>
             <div class="window-body">
-                <h2 class="section-title">STATEMENT</h2>
+                <h2 class="section-title">CORE_PHILOSOPHY</h2>
                 
                 <div class="dossier-text">
-                    <strong class="text-accent">[소개] 규칙적인 텍스트 속에서 가치를 찾다</strong>
-                    <p style="margin-top: 6px;">복잡하고 무질서한 시스템 로그 속에서 의미 있는 단서를 찾아내고, 정돈된 패널 시스템으로 시각화하는 것을 즐깁니다. 가상 OS 포트폴리오를 기반으로 몰입감 있는 인터페이스를 설계하는 직무에 최적화되어 있습니다.</p>
+                    <strong class="text-accent">[Minimal First] 장식의 배제</strong>
+                    <p style="margin-top: 6px;">기능적으로 필요하지 않은 불필요한 프레임, 레이블, 애니메이션을 배제합니다. 정보의 우선순위와 빠른 상태 해석, 반복 조작 피로 감소를 최우선으로 설계되었습니다.</p>
                 </div>
 
                 <div class="dossier-text">
-                    <strong class="text-accent">[지원동기] 냉정한 관제 환경의 실현</strong>
-                    <p style="margin-top: 6px;">단순히 화려함을 좇는 UI가 아니라 정보의 우선순위와 사용자의 반복 조작 피로를 줄이는 'Minimal First' 철학에 공감하여 지원했습니다. 시스템 구조 안에서 사용자가 직관적으로 흐름을 이해할 수 있는 백엔드 및 프론트엔드 최적화를 제공하겠습니다.</p>
+                    <strong class="text-accent">[State is Color] 상태의 시각화</strong>
+                    <p style="margin-top: 6px;">노드의 Locked, Cracking, Open 상태를 텍스트보다 색상으로 먼저 전달합니다. 배경색(#1A1A1A)과 상태색을 엄격히 분리하여 UI 구조의 규칙성을 보장합니다.</p>
+                </div>
+
+                <div class="dossier-text">
+                    <strong class="text-accent">[Monospace Everywhere] 일관된 리듬</strong>
+                    <p style="margin-top: 6px;">숫자, 영문, 한글이 혼용되는 환경 전반에서 단서 비교 및 로그 판독의 규칙성을 유지하기 위해 고정폭 폰트와 촘촘한 자간 스케일을 일관되게 채택했습니다.</p>
                 </div>
 
                 <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px;">
-                    <span class="meta-info">SYSTEM_LOG_FEED:</span>
-                    <p class="meta-info" style="color: var(--open);">[16:50:35] PORT 22 OPEN</p>
-                    <p class="meta-info" style="color: var(--accent);">[16:50:36] DOSSIER SLOT UNLOCKED</p>
+                    <span class="meta-info">NOTIFICATION_CENTER_FEED:</span>
+                    <p class="meta-info" style="color: var(--accent);">[FEED] TARGET COPIED</p>
+                    <p class="meta-info" style="color: var(--open);">[FEED] DOSSIER SLOT UNLOCKED</p>
+                    <p class="meta-info" style="color: var(--cracking);">[FEED] PROXY UNSTABLE</p>
                 </div>
             </div>
         </section>
@@ -392,27 +409,33 @@
     <script>
         function triggerToast(message, type = 'info') {
             const container = document.getElementById('toast-container');
+            
+            // 최대 3개까지만 스택 유지, 오래된 토스트 자동 삭제
+            if (container.children.length >= 3) {
+                container.removeChild(container.firstChild);
+            }
+
             const toast = document.createElement('div');
             toast.className = `toast ${type}`;
             toast.innerHTML = `
-                <span style="font-size:13px; font-weight:bold;">${message}</span>
+                <span style="font-size:13px; font-weight:bold; color:#FFF;">${message}</span>
                 <span style="font-size:11px; margin-left:12px; color:rgba(224,224,224,0.4)">SYSTEM</span>
             `;
             container.appendChild(toast);
 
-            // 3초 후 자동 제거
+            // 2.5초 후 자동 제거
             setTimeout(() => {
                 toast.style.opacity = '0';
                 toast.style.transform = 'translateX(100%)';
-                toast.style.transition = 'all 150ms ease-in';
-                setTimeout(() => toast.remove(), 150);
-            }, 3000);
+                toast.style.transition = 'all 120ms ease-in';
+                setTimeout(() => toast.remove(), 120);
+            }, 2500);
         }
 
-        // 초기 시스템 로드 연출용 토스트
+        // 초기 로드 시 가이드라인 예시 토스트 출력
         window.onload = () => {
-            setTimeout(() => triggerToast('PORT 22 OPEN', 'success'), 400);
-            setTimeout(() => triggerToast('DOSSIER SLOT UNLOCKED', 'info'), 900);
+            setTimeout(() => triggerToast('MAIL RECEIVED', 'info'), 400);
+            setTimeout(() => triggerToast('TARGET COPIED', 'success'), 900);
         };
     </script>
 </body>
